@@ -20,9 +20,16 @@ semantic.json. Run "gulp install" to set-up Semantic
 
 使用react—create-app構建的項目，當src文件夾下文件想引用src文件夾外文件因為官方限制問題會報以下錯誤。
 1，項目直接eject命令 `yarn eject`
+2，將`webpack.config.js`中ModuleScopePlugin命令註釋掉即可。
 
+`new ModuleScopePlugin(paths.appSrc, [paths.appPackageJson]),`
 
+* semantic-ui [Include in Your HTML](https://semantic-ui.com/introduction/getting-started.html#install-nodejs) (O)
+pulic/index.html
 
+```html
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+```
 
 ## Available Scripts
 
