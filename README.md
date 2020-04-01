@@ -3,6 +3,27 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 yarn add react-router@^3 
 yarn remove react-router-dom
 
+## References
+
+uport-project/[uPort-live](https://github.com/uport-project/uPort-live)  
+[live.uport.space](https://live.uport.space/)  
+
+### [semantic-ui](https://semantic-ui.com/)
+
+```sh
+$ cd semantic
+$ gulp build
+```
+semantic.json. Run "gulp install" to set-up Semantic
+
+> outside of the project src/ directory. Relative imports outside of src/ are not supported.
+
+使用react—create-app構建的項目，當src文件夾下文件想引用src文件夾外文件因為官方限制問題會報以下錯誤。
+1，項目直接eject命令 `yarn eject`
+
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
