@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { LoginButton } from '../user'
+
 import './Home.css'
 
 import qrIcon from '../../img/qr-icon.png'
@@ -22,14 +24,14 @@ const Home = () => (
         </div>
         <div className="row">
           <div className="column center aligned">
-            {/* <LoginButton
+            <LoginButton
               style={{
                 border: '1px solid #fff', 
                 borderRadius: '4px',
                 padding: '0.5em 1em',
                 fontSize: '1.5rem'
               }}>Login with uPort
-            </LoginButton> */}
+            </LoginButton>
           </div>
         </div>
         <div id="imagerow" className="row">
