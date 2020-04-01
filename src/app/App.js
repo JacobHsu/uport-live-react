@@ -1,25 +1,16 @@
 import React from 'react';
+import { Router, Route, browserHistory } from 'react-router'
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
+import {
+  Home
+} from '../components'
 
-        <p>
-          Edit <code>src/app/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <Router history={browserHistory}>
+    <Route path="/" component={Home}></Route>
+  </Router>
+)    
 
 export default App;
